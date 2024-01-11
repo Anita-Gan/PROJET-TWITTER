@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+:root {
+     --colorLight: #FFFFFF;
+     --colorDark: #000000; 
+    --colorBlue: #1D9BF0;
+    --colorGray:#6E767D;
+    --colorPal:#D9D9D9;
+}
+body{
+    background-color: var(--colorDark);
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    height: 1400px;
+}
+
+.timeline{
+    display: flex;
+    border: 1px solid var(--colorGray);
+    position: relative;
+    left: 32%;
+    top: 50%;  
+}
+.tweets{
+ border: 1px solid var(--colorGray);
+ padding: 30px;
+ 
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid var(--colorGray); 
+   padding: 15px;
+}
+.page-title{
+    color: var(--colorLight);
+ }
+.top-tweets{
+   float: right;
+   width: 20px;
+   height: 20px;
+ }
+ .tweet-editor{
+    padding:15px ;
+ }
+ .avatar{
+    display: block;
+    float: inline-start;
+    padding-bottom: 5%;
+}
+.tweet-editor-input{
+    text-decoration-color: var(--colorPal);
+    background-color: #000000;
+    border: none;
+    font-size: 20px;
+    padding-top: 3%;
+}
+.tweet-editor-actions{
+    display: flex;
+    column-gap: 15px;
+    bottom: 0;
+    position: relative;
+    top: 50px;
+    left: 0; 
+    padding: 40Px;
+    
+    
+}
+.button{
+    float: inline-end;
+    background-color: var(--colorBlue);
+    width: auto;
+    padding: 0px 5px;
+    border-radius: 25px;
+}
+button{
+   text-decoration-color: #FFFFFF;
+}
+h3{
+    color:var(--colorLight);
+}
+p{
+    color: var(--colorLight);
+}
+.text{
+    display: block;
+    margin-left: 10%;
+    top: 0px;
+    font-size: 19px;
+}
+.tweet{
+    border: 1px solid var(--colorGray);
+    padding: 10px;
+    position: relative;
+    top: 0px;
+    font-size: 19px;
+      
+}
+.tweet-action{
+    display: flex;
+    justify-content: center;
+    column-gap: 95px;
+    padding: 15px;
+     
+}
+.tweet-title{
+    margin-left: 10%;
+    top: 0px;
+    bottom: 1Opx;
+    font-size: 19px;
+}
+.tweet-image{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 5px;
+    max-width:800px;
+    max-height: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
