@@ -1,6 +1,6 @@
 export default function Button(props) {
     return(
-      <button type="submit"> {props.name} </button>
-  
+      <button className="button" type="submit">Tweet</button>
+      
     )
   }

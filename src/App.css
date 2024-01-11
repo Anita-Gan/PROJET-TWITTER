@@ -15,17 +15,22 @@ body{
     background-color: var(--colorDark);
 }
 .timeline{
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    width: 730px;
+    justify-content: center;
+    width: 800px;
     height: 1400px;
 }
 
 .timeline{
-    display: flex;
+    display: block;
     border: 1px solid var(--colorGray);
     position: relative;
-    left: 32%;
+    
     top: 50%;  
 }
 .tweets{
@@ -59,7 +64,7 @@ body{
     text-decoration-color: var(--colorPal);
     background-color: #000000;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 3%;
 }
 .tweet-editor-actions{
@@ -69,16 +74,16 @@ body{
     position: relative;
     top: 50px;
     left: 0; 
-    padding: 40Px;
-    
-    
+    padding: 40Px;  
 }
 .button{
     float: inline-end;
     background-color: var(--colorBlue);
-    width: auto;
-    padding: 0px 5px;
-    border-radius: 25px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 50%;
 }
 button{
    text-decoration-color: #FFFFFF;
@@ -113,16 +118,16 @@ p{
 .tweet-title{
     margin-left: 10%;
     top: 0px;
-    bottom: 1Opx;
+    bottom: 15px;
     font-size: 19px;
 }
 .tweet-image{
     display: flex;
     justify-content: center;
-    padding-left: 10%;
-    padding-top: 5px;
-    max-width:800px;
-    max-height: 800px;
+    width: 80vh;
+    height: 40vh;
+    border-radius: 25px;
+    
 }
 
 

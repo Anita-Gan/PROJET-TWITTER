@@ -6,7 +6,7 @@ export default function Icon(props){
                 <img src="Retweet.svg" alt=""/>
                 <img src="Buton1.svg" alt=""/>
                 <img src="Group.png" alt=""/>
-           {props.name} </div>  
+         </div>  
         
     )
 }

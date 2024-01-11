@@ -6,8 +6,8 @@ import Button from './Button'
 import Home from './Home'
 import Avatar from './Avatar'
 import Text1 from './Text1'
-import Icon from './Icons cnn'
 import Text2 from './text2'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,9 +16,12 @@ function App() {
     <>
       <div className="timeline">
        <Home></Home>
-       <Avatar/>
-       <Text1 ></Text1>    
-       <Text2 > </Text2>   
+       <Avatar>
+        <Button />
+       </Avatar>
+       <Text1 ></Text1> 
+       <Text2></Text2>   
+      
       </div>
     </>
   )
