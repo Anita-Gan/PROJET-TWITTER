@@ -15,12 +15,18 @@ body{
     background-color: var(--colorDark);
 }
 .Navbar{
-    background-color: #1D9BF0;
     display: flex;
-    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     column-gap: 15px;
-    list-style: none;
     margin: 20px;
+}
+.Navbar ul{
+   font-size: 1.5rem;
+   list-style: none;
+   
+   color: #FFFFFF;
 }
 .timeline{
     margin: 0 auto;
@@ -31,19 +37,17 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 800px;
-    height: 1900px;
+    height: 2340px;
 }
 
 .timeline{
     display: block;
     border: 1px solid var(--colorGray);
     position: relative;
-    
     top: 50%;  
 }
 .tweets{
     display: flex;
-    
     border: 1px solid var(--colorGray);
     padding: 30px;
  
@@ -51,6 +55,13 @@ body{
 .tweets img{
     width: 40px;
     height: 40px;
+}
+.tweets .tweet-image{
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    height: 20rem; 
+    border-radius: 25px;
 }
 .container{
     display:flex;
@@ -93,8 +104,8 @@ body{
 .button{
     float: inline-end;
     background-color: var(--colorBlue);
-    padding: 15px 25px;
-    border-radius: 20px;
+    padding: 15px 45px;
+    border-radius: 70px;
     color: #FFFFFF;
     font-size: 20px;
     margin-left: 50%;
@@ -113,7 +124,7 @@ p{
     padding-bottom: 5%;
 }
 .text{
-    display: block;
+    display: flex;
     margin-left: 10%;
     top: 0px;
     font-size: 19px;
@@ -132,22 +143,15 @@ p{
     justify-content: center;
     column-gap: 25px;
     padding: 15px;
+    
      
 }
 .tweet-title{
-    margin-left: 10%;
-    top: 0px;
-    bottom: 15px;
-    font-size: 19px;
-}
-.tweet-image{
     display: flex;
-    justify-content: center;
-    width: 40rem;
-    height: 20rem;
-    padding-left: 10%;
-    
+    border: 1px solid var(--colorGray);
+    padding: 30px;
 }
+
 
 
 

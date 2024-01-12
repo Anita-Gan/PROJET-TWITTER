@@ -11,12 +11,17 @@ import Icon from './Iconscnn'
 import Text3 from './text3'
 import Text4 from './Text4'
 import Text5 from './Text5'
+import Nav from './NavBar'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div className='Navbar'>
+    <Nav></Nav>
       <div className="timeline">
+      
        <Home></Home>
        <Avatar>
         <Button />
@@ -27,6 +32,8 @@ function App() {
        <Text4></Text4>
        <Text5></Text5>
       </div>
+    </div>
+    
     </>
   )
 }
