@@ -14,6 +14,14 @@
 body{
     background-color: var(--colorDark);
 }
+.Navbar{
+    background-color: #1D9BF0;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 15px;
+    list-style: none;
+    margin: 20px;
+}
 .timeline{
     margin: 0 auto;
     margin-top: 0;
@@ -23,7 +31,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 800px;
-    height: 1400px;
+    height: 1900px;
 }
 
 .timeline{
@@ -34,9 +42,15 @@ body{
     top: 50%;  
 }
 .tweets{
- border: 1px solid var(--colorGray);
- padding: 30px;
+    display: flex;
+    
+    border: 1px solid var(--colorGray);
+    padding: 30px;
  
+}
+.tweets img{
+    width: 40px;
+    height: 40px;
 }
 .container{
     display:flex;
@@ -90,28 +104,33 @@ button{
 }
 h3{
     color:var(--colorLight);
+    padding-left: 10%;
+    
+   
 }
 p{
-    color: var(--colorLight);
+    color: var(--colorGray);
+    padding-bottom: 5%;
 }
 .text{
     display: block;
     margin-left: 10%;
     top: 0px;
     font-size: 19px;
+
 }
 .tweet{
     border: 1px solid var(--colorGray);
-    padding: 10px;
-    position: relative;
     top: 0px;
+    bottom: 15px;
     font-size: 19px;
+    
       
 }
 .tweet-action{
     display: flex;
     justify-content: center;
-    column-gap: 95px;
+    column-gap: 25px;
     padding: 15px;
      
 }
@@ -124,12 +143,11 @@ p{
 .tweet-image{
     display: flex;
     justify-content: center;
-    width: 80vh;
-    height: 40vh;
-    border-radius: 25px;
+    width: 40rem;
+    height: 20rem;
+    padding-left: 10%;
     
 }
-
 
 
 

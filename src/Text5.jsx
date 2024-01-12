@@ -1,4 +1,4 @@
-export default function Text2(props) {
+export default function Text5(props) {
     return (
 
         <div className="tweets">
