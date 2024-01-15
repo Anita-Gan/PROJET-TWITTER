@@ -1,4 +1,4 @@
-export default function Avatar(){
+export default function Avatar(props){
     return(
         <>
         <div className="tweet-editor">
@@ -10,6 +10,7 @@ export default function Avatar(){
                 <img src="Poll.svg" alt="button menu"/>
                 <img src="Emoji.svg" alt="button menu"/>
                 <img src="Schedule.svg" alt="button menu"/>
+                { props.children}
             </div>
          </div>   
         </>
