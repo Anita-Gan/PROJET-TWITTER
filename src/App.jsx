@@ -11,29 +11,33 @@ import Icon from './Iconscnn'
 import Text3 from './text3'
 import Text4 from './Text4'
 import Text5 from './Text5'
-import Nav from './NavBar'
+import Nav from './Sidebar'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className='Navbar'>
-    <Nav></Nav>
-      <div className="timeline">
-      
-       <Home></Home>
-       <Avatar>
-        <Button />
-       </Avatar>
-       <Text1 ></Text1> 
-       <Text2></Text2>  
-       <Text3></Text3> 
-       <Text4></Text4>
-       <Text5></Text5>
-      </div>
-    </div>
+   
     
+    <div className='Navbar'>
+    <Nav>
+      <Button/>
+    </Nav>
+    <div className="timeline">
+      <Home></Home>
+      <Avatar>
+       <Button />
+      </Avatar>
+      <Text1 ></Text1> 
+      <Text2></Text2>  
+      <Text3></Text3> 
+      <Text4></Text4>
+      <Text5></Text5>
+     </div>
+   
+    </div>
     </>
   )
 }
