@@ -37,6 +37,7 @@ function App() {
           <Text3></Text3>
           <Text4></Text4>
           <Text5></Text5>
+          
         </div>
         <div>
           <Trends></Trends>

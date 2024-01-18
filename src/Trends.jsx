@@ -7,7 +7,7 @@ export default function Trends() {
                     id="maRecherche"
                     name="q"
                     placeholder="search Twitter"
-                    size="40" />
+                    size="30" />
 
             </div>
 
@@ -16,7 +16,7 @@ export default function Trends() {
                     <div className="trend_1">
                         <p>Trends for you</p>
                         <div>
-                            <img src="Settings.svg" alt=""/>
+                            <img src="Settings.svg" alt="" />
                         </div>
                     </div>
 
@@ -64,24 +64,24 @@ export default function Trends() {
             <div className="trend_3">
                 <span>Who to follow</span>
 
-                
+
                 {/* <span>The New York Times</span>
                 <img src="vector2.svg" alt="" />
                 <p>@nytimes</p> */}
                 <div className="TT">
-                <img src="image 1(1).png" alt="" />
-                 <span>The New York Times</span> 
-                
+                    <img src="image 1(1).png" alt="" />
+                    <span>The New York Times</span>
+
                     <button className="btn_trend">Follow</button>
                 </div>
 
-                
+
                 {/* <span>CNN</span>
                 <img src="vector2.svg" alt="" />
                 <p>@cnn</p> */}
                 <div className="TT">
-                <img src="image 1.png" alt="" />
-                <span>Hello world@</span>
+                    <img src="image 1.png" alt="" />
+                    <span>Hello world@</span>
                     <button className="btn_trend">Follow</button>
                 </div>
 
@@ -93,11 +93,17 @@ export default function Trends() {
                 </div>
                 <span className="showmore"> Show more</span>
             </div>
-
-
-
-
+            
+                
+            <p>Terms of services PrivacyPolicy Cookie Policy</p>
+                <div className="trend_footer">
+                <p> imprint Ads info More</p>
+                <img src="More-2.svg" alt="" />
+                <p>@2024 Twitter,Inc.</p>
+            </div>
 
         </div >
+
+
     )
 }

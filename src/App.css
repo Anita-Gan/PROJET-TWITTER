@@ -19,15 +19,16 @@
     display: flex;
     gap: 15px;
     background-color: var(--colorDark);
-    width: 100%;
+   justify-content: center;
 }
 
 .Navbar {
-    display: flex;
+     /* display: flex;  */
     width: 25%;
-    gap: 35px;
-    padding-left: 5%;
-
+    position: sticky;
+    top: 0;
+    padding-left: 10%;
+    gap: 10%;
 }
 
 .btn_navbar {
@@ -35,20 +36,25 @@
     margin-bottom: 45px;
     padding: 5%;
     display: flex;
-    gap: 10%;
+    
 
 }
 
 .Navbar ul {
     font-size: 0.1rem;
     list-style: none;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+   
 }
 
 .Navbar a {
     color: #FFFFFF;
     font-size: 25px;
     text-decoration: none;
+   
 }
 
 .navbar_avatar {
@@ -57,25 +63,28 @@
 
 .navbar_text {
     display: flex;
-    gap: 10%;
-    padding: 5%;
+    gap: 20px;
+   
 
 }
+.navbar_text img {
+    width: 2rem;
 
+}
 .timeline {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 800px;
-    height: 2340px;
-
+    align-items: center;
+    height: 100%;
+    max-width: 750px;
 }
 
 .timeline {
     display: block;
     border: 1px solid var(--colorGray);
     position: relative;
-
+   
 
 }
 
@@ -90,13 +99,15 @@
     width: 40px;
     height: 40px;
 }
-
 .tweets .tweet-image {
     display: flex;
     justify-content: center;
     width: 40rem;
     height: 20rem;
+    max-width: 80rem;
+    min-width: 20px;
     border-radius: 25px;
+    
 }
 
 .container {
@@ -105,6 +116,7 @@
     border: 1px solid var(--colorGray);
     padding: 15px;
 }
+
 
 .page-title {
     color: var(--colorLight);
@@ -169,7 +181,10 @@ p {
     color: var(--colorLight);
     padding-bottom: 5%;
 }
-
+.icon_cnn{
+    max-width: 110rem;
+    border-radius: 70%;
+}
 .text {
     display: flex;
     margin-left: 10%;
@@ -205,6 +220,9 @@ p {
 .Trends {
     display: flex;
     flex-direction: column;
+    height: 25%;
+    position: sticky;
+    top: 0;
 }
 
 .Trends input {
@@ -297,6 +315,9 @@ span {
 }
 
 .btn_trend {
-    padding: 10px 10px;
-    border-radius: 35%;
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+.trend_footer{
+   display: flex;
 }
