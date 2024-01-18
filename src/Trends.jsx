@@ -7,7 +7,7 @@ export default function Trends() {
                     id="maRecherche"
                     name="q"
                     placeholder="search Twitter"
-                    size="30" />
+                    size="40" />
 
             </div>
 
@@ -16,7 +16,7 @@ export default function Trends() {
                     <div className="trend_1">
                         <p>Trends for you</p>
                         <div>
-                            <img src="Settings.svg" alt="" />
+                            <img src="Settings.svg" alt=""/>
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@ export default function Trends() {
                 <p>@cnn</p> */}
                 <div className="TT">
                 <img src="image 1.png" alt="" />
-                <span>CNN</span>
+                <span>Hello world@</span>
                     <button className="btn_trend">Follow</button>
                 </div>
 

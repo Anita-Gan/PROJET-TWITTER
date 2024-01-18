@@ -1,3 +1,10 @@
+function Example() {
+    const [count, setCount] = useState(0);
+  
+    useEffect(() => {
+      document.Text1 = `Vous avez cliqué ${count} fois`;
+    });
+  }
 export default function Text1(props) {
     return (
 
