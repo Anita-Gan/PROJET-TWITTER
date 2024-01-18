@@ -11,61 +11,81 @@
     --colorBlue: #1D9BF0;
     --colorGray: #1a1a1a;
     --colorPal: #9f9e9e;
-    --colorTrends:#6E767D;
+    --colorTrends: #6E767D;
+    --colorTrend: rgb(22, 23, 31);
 }
 
-body {
+.body {
+    display: flex;
+    gap: 15px;
     background-color: var(--colorDark);
+   justify-content: center;
 }
 
 .Navbar {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin: 20px;
-    
-    
-   
-    
+     /* display: flex;  */
+    width: 25%;
+    position: sticky;
+    top: 0;
+    padding-left: 10%;
+    gap: 10%;
 }
-.btn_navbar{
-   padding-right: 65%;
-   margin-bottom: 15px;
-   
+
+.btn_navbar {
+    padding: 15px 45px;
+    margin-bottom: 45px;
+    padding: 5%;
+    display: flex;
+    
+
 }
 
 .Navbar ul {
-    font-size: 1.5rem;
+    font-size: 0.1rem;
     list-style: none;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+   
 }
-.Navbar a{
+
+.Navbar a {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
    
 }
 
+.navbar_avatar {
+    margin-top: 60%;
+}
+
+.navbar_text {
+    display: flex;
+    gap: 20px;
+   
+
+}
+.navbar_text img {
+    width: 2rem;
+
+}
 .timeline {
-    margin: 0 auto;
-    margin-top: 20;
-    margin-bottom: 0;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 800px;
-    height: 2340px;
-    
+    align-items: center;
+    height: 100%;
+    max-width: 750px;
 }
 
 .timeline {
     display: block;
     border: 1px solid var(--colorGray);
     position: relative;
-    
-    
+   
+
 }
 
 .tweets {
@@ -79,13 +99,15 @@ body {
     width: 40px;
     height: 40px;
 }
-
 .tweets .tweet-image {
     display: flex;
     justify-content: center;
     width: 40rem;
     height: 20rem;
+    max-width: 80rem;
+    min-width: 20px;
     border-radius: 25px;
+    
 }
 
 .container {
@@ -94,6 +116,7 @@ body {
     border: 1px solid var(--colorGray);
     padding: 15px;
 }
+
 
 .page-title {
     color: var(--colorLight);
@@ -158,12 +181,15 @@ p {
     color: var(--colorLight);
     padding-bottom: 5%;
 }
-
+.icon_cnn{
+    max-width: 110rem;
+    border-radius: 70%;
+}
 .text {
     display: flex;
     margin-left: 10%;
     top: 0px;
-    font-size: 19px;
+    font-size: 20px;
 
 }
 
@@ -190,22 +216,108 @@ p {
     border: 1px solid var(--colorGray);
     padding: 30px;
 }
-.Trends{
+
+.Trends {
     display: flex;
-    justify-content: flex-end; 
+    flex-direction: column;
+    height: 25%;
+    position: sticky;
+    top: 0;
 }
-.Trends input{
+
+.Trends input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border-radius: 5%;
     text-decoration-color: white;
-    background-color:var(--colorBlue);
+    background-color: var(--colorTrend);
     border: none;
     font-size: 15px;
-    padding-top: 3%;
+
 }
-.Trends a{
+
+.Trends a {
     color: var(--colorBlue);
     font-size: 20px;
     text-decoration: none;
-   
+
 }
 
+.Trends_1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorTrend);
+    border-radius: 15px;
+    margin-top: 10%;
+    padding-left: 15%;
+    padding-left: 5%;
+
+
+}
+
+.trend_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+span {
+    color: var(--colorLight);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trend_2 {
+    color: var(--colorPal);
+}
+
+.trend_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorTrend);
+    border-radius: 30px;
+    padding: 3px;
+    width: 100%;
+    height: 52px;
+    gap: 7%;
+}
+
+.trend_3 {
+    background-color: var(--colorTrend);
+    border-radius: 15px;
+    margin-top: 10%;
+    padding-left: 15%;
+    padding-left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.TT {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-left: 5%;
+}
+
+.showmore {
+    color: #1D9BF0;
+
+}
+
+.btn_trend {
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+.trend_footer{
+   display: flex;
+}

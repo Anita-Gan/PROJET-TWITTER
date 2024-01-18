@@ -6,7 +6,7 @@ export default function Text5(props) {
             <div>
                 <h3 className="text">NewsAppd@</h3>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Explicabo ipsa fugit quod culpa modi placeat labore rerum <br />autem amet, quas vero delectus est nam officia quia tempora ab ratione! Consequatur? {props.name} </p>
-                <img class="tweet-image" src="photo pt.jpg" alt="" />
+                <img class="tweet-image" src="rose.jpg" alt="" />
                 <div class="tweet-action">
                     <img src="Buton.svg" alt="" />
                     <p>543 M</p>

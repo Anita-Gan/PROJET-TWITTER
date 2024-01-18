@@ -12,6 +12,7 @@ import Text3 from './text3'
 import Text4 from './Text4'
 import Text5 from './Text5'
 import Nav from './Sidebar'
+import Trends from './Trends'
 
 
 function App() {
@@ -19,25 +20,31 @@ function App() {
 
   return (
     <>
-   
-    
-    <div className='Navbar'>
-    <Nav>
-      <Button/>
-    </Nav>
-    <div className="timeline">
-      <Home></Home>
-      <Avatar>
-       <Button />
-      </Avatar>
-      <Text1 ></Text1> 
-      <Text2></Text2>  
-      <Text3></Text3> 
-      <Text4></Text4>
-      <Text5></Text5>
-     </div>
-   
-    </div>
+
+      <div className='body'>
+        <div className='Navbar'>
+          <Nav>
+            <Button />
+          </Nav>
+        </div>
+        <div className="timeline">
+          <Home></Home>
+          <Avatar>
+            <Button />
+          </Avatar>
+          <Text1 ></Text1>
+          <Text2></Text2>
+          <Text3></Text3>
+          <Text4></Text4>
+          <Text5></Text5>
+          
+        </div>
+        <div>
+          <Trends></Trends>
+        </div>
+      </div>
+
+
     </>
   )
 }

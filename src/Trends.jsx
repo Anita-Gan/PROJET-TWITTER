@@ -1,43 +1,109 @@
 export default function Trends() {
     return (
         <div className="Trends">
+            <div className="nav">
+                <img src="Vector.svg" alt="" />
+                <input className="nav_search" type="search"
+                    id="maRecherche"
+                    name="q"
+                    placeholder="search Twitter"
+                    size="30" />
+
+            </div>
+
             <ul>
-                <li>
-                    <input type="search"
-                        id="maRecherche"
-                        name="q"
-                        placeholder="search Twitter"
-                        size="30" />
-                </li>
-                <li>
-                    <div>
-                        <h3>Trends for you</h3>
-                        <img src="setting.svg" alt="" />
+                <div className="Trends_1">
+                    <div className="trend_1">
+                        <p>Trends for you</p>
+                        <div>
+                            <img src="Settings.svg" alt="" />
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h3>Trending in Turkey</h3>
-                    <img src="" alt="" />
-                    <h3>#QUID</h3>
-                    <p>2,066 Tweets</p>
-                    <p>Trending in Turkey</p>
-                    <img src="" alt="" />
-                    <h3>#QUID</h3>
-                    <p>2,066 Tweets</p>
-                    <p>Trending in Turkey</p>
-                    <img src="" alt="" />
-                    <h3>#QUID</h3>
-                </li>
-                <li>
-                    <a href="#">Show more</a>
-                </li>
+
+                    <div>
+                        <div className="trend_text">
+                            <span className="trend_2">Trending in Turkey</span>
+                            <div>
+                                <img src="More-2.svg" alt="" />
+                            </div>
+                        </div>
+                        <span>#QUID</span>
+                        <p className="trend_2">2,066 Tweets</p>
+                        <div className="trend_text">
+                            <span className="trend_2">Trending in Turkey</span>
+                            <div>
+                                <img src="More-2.svg" alt="" />
+                            </div>
+                        </div>
+                        <span>#QUID</span>
+                        <p className="trend_2">2,066 Tweets</p>
+                        <div className="trend_text">
+                            <span className="trend_2">Trending in Turkey</span>
+                            <div>
+                                <img src="More-2.svg" alt="" />
+                            </div>
+                        </div>
+                        <span>#QUID</span>
+                        <p className="trend_2">2,066 Tweets</p>
+                        <div className="trend_text">
+                            <span className="trend_2">Trending in Turkey</span>
+                            <div>
+                                <img src="More-2.svg" alt="" />
+                            </div>
+                        </div>
+                        <span>#QUID</span>
+                        <p className="trend_2">2,066 Tweets</p>
+                    </div>
+
+                    <div>
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
+
             </ul>
+            <div className="trend_3">
+                <span>Who to follow</span>
 
 
+                {/* <span>The New York Times</span>
+                <img src="vector2.svg" alt="" />
+                <p>@nytimes</p> */}
+                <div className="TT">
+                    <img src="image 1(1).png" alt="" />
+                    <span>The New York Times</span>
+
+                    <button className="btn_trend">Follow</button>
+                </div>
 
 
+                {/* <span>CNN</span>
+                <img src="vector2.svg" alt="" />
+                <p>@cnn</p> */}
+                <div className="TT">
+                    <img src="image 1.png" alt="" />
+                    <span>Hello world@</span>
+                    <button className="btn_trend">Follow</button>
+                </div>
 
 
-        </div>
+                <div className="TT">
+                    <img src="image 1(2).png" alt="" />
+                    <span>Twitter</span>
+                    <button className="btn_trend">Follow</button>
+                </div>
+                <span className="showmore"> Show more</span>
+            </div>
+            
+                
+            <p>Terms of services PrivacyPolicy Cookie Policy</p>
+                <div className="trend_footer">
+                <p> imprint Ads info More</p>
+                <img src="More-2.svg" alt="" />
+                <p>@2024 Twitter,Inc.</p>
+            </div>
+
+        </div >
+
+
     )
 }
