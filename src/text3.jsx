@@ -6,7 +6,7 @@ export default function Text3(props) {
             <div>
                 <h3 className="text">Twitter</h3>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Ex libero rerum placeat, vero omnis fugiat sit eos natus tenetur aspernatur architecto aperiam dicta incidunt nam delectus adipisci repellendus facilis ducimus!</p>
-                <div class="tweet-action">
+                <div className="tweet-action">
                     <img src="Buton.svg" alt="" />
                     <p>123 M</p>
                     <img src="Retweet.svg" alt="" />

@@ -1,10 +1,4 @@
-function Example() {
-    const [count, setCount] = useState(0);
-  
-    useEffect(() => {
-      document.Text1 = `Vous avez cliqué ${count} fois`;
-    });
-  }
+
 export default function Text1(props) {
     return (
 
@@ -13,7 +7,7 @@ export default function Text1(props) {
             <div>
                 <h3 className="text">Hello World@</h3>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Explicabo ipsa fugit quod culpa modi placeat labore rerum <br/>autem amet, quas vero delectus est nam officia quia tempora ab ratione! Consequatur? {props.name} </p>
-                <div class="tweet-action">
+                <div className="tweet-action">
                     <img src="Buton.svg" alt=""/>
                     <p>234 M</p>
                     <img src="Retweet.svg" alt=""/>
