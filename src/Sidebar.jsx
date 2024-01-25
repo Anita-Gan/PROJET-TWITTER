@@ -10,7 +10,7 @@ export default function Nav(props) {
                     <img src="TWT.svg" alt="" />
                 </Link>
                 <Link  to="" className="navbar_text">
-                    <img src="Notifications.svg" alt="" />
+                    <img src="Home-Fill.svg" alt="" />
                     <li>Home</li>
                 </Link>
                 <Link className="navbar_text">
@@ -21,7 +21,7 @@ export default function Nav(props) {
                     <img src="Notifications.svg" alt="" />
                     <li>Notification</li>
                 </Link>
-                <Link className="navbar_text">
+                <Link  to="messages" className="navbar_text">
                     <img src="Messages.svg" alt="" />
                     <li>Messages</li>
                 </Link>

@@ -14,8 +14,10 @@ import Text5 from './Text5'
 import Nav from './Sidebar'
 import Trends from './Trends'
 import Home from './assets/composant sidebar/Home'
-import Profil from './assets/composant sidebar/Profli'
+import Profil from './assets/composant sidebar/Profil'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import Messages from './assets/composant sidebar/Messages'
+import './assets/Stylesidebar/Profil.css'
 
 
 
@@ -36,6 +38,7 @@ function App() {
           <Routes>
           <Route path="/" element={<Timeline />} />
           <Route path="/profil" element={<Profil />} />
+          <Route path="/messages" element={<Messages />} />
         </Routes>
           <div>
             <Trends></Trends>
