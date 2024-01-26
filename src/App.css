@@ -24,10 +24,9 @@
 
 .Navbar {
      /* display: flex;  */
-    width: 25%;
+    max-width: 250px;
     position: sticky;
     top: 0;
-    padding-left: 10%;
     gap: 10%;
 }
 
@@ -36,8 +35,6 @@
     margin-bottom: 45px;
     padding: 5%;
     display: flex;
-    
-
 }
 
 .Navbar ul {
@@ -46,7 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 95vh;
    
 }
 
@@ -55,6 +52,10 @@
     font-size: 25px;
     text-decoration: none;
    
+}
+.Navbar button{
+    padding: 8px 78px;  
+    margin-right: 5%;
 }
 
 .navbar_avatar {
@@ -72,12 +73,14 @@
 
 }
 .timeline {
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-width: 750px;
+    position: relative;
 }
 
 .timeline {
@@ -95,10 +98,11 @@
 
 }
 
-.tweets img {
-    width: 40px;
-    height: 40px;
-}
+.tweets img{
+    width: 50px;
+    height: 50px;
+} 
+
 .tweets .tweet-image {
     display: flex;
     justify-content: center;
@@ -107,7 +111,28 @@
     max-width: 80rem;
     min-width: 20px;
     border-radius: 25px;
-    
+    margin-right: 25px;
+   
+}
+.tweet-action {
+    /* background-color: red; */
+    width: 100%;
+   
+}
+.tweet-action div{
+    display: flex;
+}
+.tweet-action span{
+    color: var(--colorPal);
+    font-weight: normal;
+    font-size: 15px;
+   
+}
+
+.tweet-action img {
+    width: 34px;
+    height: 34px;
+   
 }
 
 .container {
@@ -166,15 +191,14 @@
     margin-left: 50%;
 }
 
+
 button {
     text-decoration-color: #FFFFFF;
 }
 
 h3 {
     color: var(--colorLight);
-    padding-left: 10%;
-
-
+    /* padding-left: 10%; */
 }
 
 p {
@@ -182,7 +206,7 @@ p {
     padding-bottom: 5%;
 }
 .icon_cnn{
-    max-width: 110rem;
+    max-width: 70px;
     border-radius: 70%;
 }
 .text {
@@ -190,6 +214,7 @@ p {
     margin-left: 10%;
     top: 0px;
     font-size: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -203,12 +228,10 @@ p {
 }
 
 .tweet-action {
-    display: flex;
+    display: flex; 
     justify-content: center;
-    column-gap: 25px;
-    padding: 15px;
-
-
+    column-gap: 18%;
+    padding: 5px;
 }
 
 .tweet-title {
@@ -220,7 +243,7 @@ p {
 .Trends {
     display: flex;
     flex-direction: column;
-    height: 25%;
+    
     position: sticky;
     top: 0;
 }
@@ -321,3 +344,8 @@ span {
 .trend_footer{
    display: flex;
 }
+h1{
+    color: var(--colorLight);
+}
+
+

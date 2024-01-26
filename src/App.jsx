@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './Button'
-import Home from './Home'
+import Timeline from './Timeline'
 import Avatar from './Avatar'
 import Text1 from './Text1'
 import Text2 from './text2'
@@ -13,37 +13,38 @@ import Text4 from './Text4'
 import Text5 from './Text5'
 import Nav from './Sidebar'
 import Trends from './Trends'
+import Home from './assets/composant sidebar/Home'
+import Profil from './assets/composant sidebar/Profil'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import Messages from './assets/composant sidebar/Messages'
+import './assets/Stylesidebar/Profil.css'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
-      <div className='body'>
-        <div className='Navbar'>
-          <Nav>
-            <Button />
-          </Nav>
+      <BrowserRouter>        
+        <div className='body'>
+          <div className='Navbar'>
+            <Nav>
+              <Button />
+            </Nav>
+          </div>
+          {/* <div className="timeline">
+            <Timeline></Timeline>
+          </div> */}
+          <Routes>
+          <Route path="/" element={<Timeline />} />
+          <Route path="/profil" element={<Profil />} />
+          <Route path="/messages" element={<Messages />} />
+        </Routes>
+          <div>
+            <Trends></Trends>
+          </div>
         </div>
-        <div className="timeline">
-          <Home></Home>
-          <Avatar>
-            <Button />
-          </Avatar>
-          <Text1 ></Text1>
-          <Text2></Text2>
-          <Text3></Text3>
-          <Text4></Text4>
-          <Text5></Text5>
-          
-        </div>
-        <div>
-          <Trends></Trends>
-        </div>
-      </div>
-
+      </BrowserRouter>
 
     </>
   )
