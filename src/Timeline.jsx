@@ -1,12 +1,8 @@
-// import Text1 from "./Text1"
-// import Text2 from "./text2"
-// import Text3 from "./text3"
-// import Text4 from "./Text4"
-// import Text5 from "./Text5"
 import Avatar from "./Avatar"
 import Button from "./Button"
 import axios from "axios"
 import Post from "./Post"
+import User from "./Users"
 import { useEffect, useState } from 'react'
 
 export default function Timeline() {
@@ -16,6 +12,11 @@ export default function Timeline() {
             .then((res) => { setPost(res.data) })
 
     }, [])
+     const [user, setUser] = useState([]);
+     useEffect(()=> {
+        axios.get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+    .then((res) =>{setUser(res.data)} )
+     },[])
     return (
         <div className="timeline">
             <header className="container">
@@ -28,14 +29,11 @@ export default function Timeline() {
             {post.map((data) => (<Post
                 key={data.id}
                 text={data.body}
-                avatar={data.url}
+                avatar={user.find((element) => element.id === data.userId)?.thumbnailProfil}
                 image={data.url}
-                user={data.userId} />))}
-            {/* <Text1 ></Text1>
-            <Text2></Text2>
-            <Text3></Text3>
-            <Text4></Text4>
-            <Text5></Text5> */}
+                user={user.find((element)=> element.id === data.userId)?.name } 
+                email={user.find((element)=> element.id === data.userId)?.email}
+                /> ))}
         </div>
     )
 }
