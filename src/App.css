@@ -212,12 +212,19 @@ p {
 .text {
     display: flex;
     margin-left: 10%;
+    gap: 10px;
     top: 0px;
     font-size: 20px;
     margin-bottom: 10px;
 
 }
-
+.text span{
+    color: var(--colorPal);
+    font-size: 18px;
+}
+.text img{
+    width: 28px;
+}
 .tweet {
     border: 1px solid var(--colorGray);
     top: 0px;

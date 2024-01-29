@@ -33,7 +33,8 @@ export default function Timeline() {
                 image={data.url}
                 user={user.find((element)=> element.id === data.userId)?.name } 
                 email={user.find((element)=> element.id === data.userId)?.email}
+                joined={user.find((element)=> element.id === data.userId)?.Joined}
                 /> ))}
-        </div>
+        </div> 
     )
 }
