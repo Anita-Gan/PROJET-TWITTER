@@ -13,8 +13,8 @@ export default function Profil() {
                 </div>
             </div>
             <div className="text_p">
-            <p>anitaganenekulungu@gmail.com</p>
-            <p>Anitagan26088</p>
+            <p>anita ganenekulungu</p>
+            <p className="P">Anitagan26088</p>
             </div>
             
 
