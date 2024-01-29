@@ -7,7 +7,7 @@ export default function Post(props) {
            <Link to="profil"> {avatar && <img className="icon_cnn" src={avatar} alt="image CNN"  />} </Link>
             <div>
                <h3 className="text"> {user} </h3>
-               <span> {email} </span>
+               <span className="text"> {email} </span>
                 <p className="text"> {text} </p>
                 {image && <img className="tweet-image" src={image} alt="" />}
                

@@ -1,17 +1,22 @@
 export default function Profil() {
     return (
         <div className="profil">
+            <span>Anita kulungu</span>
+              <p>Post 0</p>
             <div className="bgd-profil">
-                <h1>ggggggg</h1>
+           
             </div>
             <div className="profil-avatar">
-                <img src="rose.jpg" alt="" />
+                <img src="soleil.jpg" alt="" />
                 <div className="btn_profil">
                     <button>Edit profil</button>
                 </div>
             </div>
+            <div className="text_p">
             <p>anitaganenekulungu@gmail.com</p>
             <p>Anitagan26088</p>
+            </div>
+            
 
             <div className="svg-profil">
                 <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +34,7 @@ export default function Profil() {
             <span>4 Following</span>
             <span>0 Followers</span>
             </div>
-            
+           
         </div>
     )
 }
